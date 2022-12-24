@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://unemaintendue-conseils.fr/sitemap.xml
