@@ -848,11 +848,10 @@ img {
 .footer__logo {
   width: 6rem;
   padding-top: 1rem;
-  height: auto;
 }
 @media screen and (max-width: 768px) {
   .footer__logo {
-    width: 30%;
+    width: 6rem;
   }
 }
 
