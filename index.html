@@ -19,9 +19,9 @@
 <!--==================== HEADER ====================-->
     <header class="header" id="header">
         <nav class="nav container">
-            <a href="#" class="nav__logo"><img src="assets/img/textunemaintendue.png" alt="une main tendue"></a>
+            <a data-aos="zoom-in-right" href="#" class="nav__logo"><img src="assets/img/textunemaintendue.png" alt="une main tendue"></a>
 
-            <div class="nav__menu" id="nav-menu">
+            <div data-aos="fade-up" class="nav__menu" id="nav-menu">
                 <ul class="nav__list grid">
                     <li class="nav__item">
                         <a href="#accueil" class="nav__link active-link">
@@ -58,7 +58,9 @@
                 <i class="fa-solid fa-xmark nav__close" id="nav-close"></i>
             </div>
 
-            <div class="nav__btns">
+            <div data-aos="flip-left"
+            data-aos-easing="ease-out-cubic"
+            data-aos-duration="2000" class="nav__btns">
 <!-- Theme change button -->
                 <i class="fa-solid fa-moon change-theme" id="theme-button"></i>
 
@@ -75,7 +77,7 @@
         <section class="accueil section" id="accueil">
             <div class="accueil__container container grid">
                 <div class="accueil__content grid">
-                    <div class="accueil__social">
+                    <div data-aos="zoom-out-down" class="accueil__social">
                         <a href="https://www.instagram.com/une.main.tendue/" target="_blank" class="accueil__social-icon">
                             <i class="fa-brands fa-instagram"></i>
                         </a>
@@ -83,10 +85,13 @@
                             <i class="fa-brands fa-linkedin-in"></i>                         
                         </a>
                     </div>
-                    <a href="#accueil" class="">
+                    <a data-aos="flip-left"
+                        data-aos-easing="ease-out-cubic"
+                        data-aos-duration="3000" href="#accueil" class="">
                         <img src="assets/img/logo.png" alt="soutien parental">
                     </a>
-                    <div class="accueil__data">
+                    <div data-aos="fade-up"
+                        data-aos-duration="3000" class="accueil__data">
                         <h1 class="accueil__subtitle">Accompagnement parental</h1>
                         <p class="accueil__description">J&#39;accueille le parent, le bébé et le jeune enfant là où il en est et au
                             moment où il en a besoin pour lui permettre de faire son propre
@@ -111,7 +116,7 @@
                                     <span class="presentation__info-name">clients <br>satisfaits <br> et heureux</span>
                                 </div>
                             </div>
-                        <a download="" href="assets/pdf/Flyer.pdf" class="button button--flex">
+                        <a data-aos="fade-left" download="" href="assets/pdf/Flyer.pdf" class="button button--flex">
                             Télécharger Flyer <i class="fa-solid fa-download button__icon"></i>
                         </a>
                         
@@ -129,14 +134,16 @@
             </div>
         </section>
 <!--==================== Présentation ====================-->
-        <section class="presentations section" id="presentations">
+        <section data-aos="fade-right"
+            data-aos-offset="300"
+            data-aos-easing="ease-in-sine" class="presentations section" id="presentations">
             <h2 class="section__title">Présentation</h2>
             <span class="section__subtitle">Qui suis-je</span>
 
             <div class="presentations__container container">
                 <div>
                     <!--=============== presentations 1 ===============-->
-                    <div class="presentations__content presentations__close">
+                    <div  class="presentations__content presentations__close">
                         <div class="presentations__header">
                             <div>
                                 <h3 class="presentations__title">Qui suis-je</h3>
@@ -192,7 +199,8 @@
             </div>
         </section>
 <!--==================== PROJECT ====================-->
-        <section class="project section">
+        <section data-aos="fade-up"
+        data-aos-anchor-placement="center-center" class="project section">
             <div class="project__bg">
                 <div class="project__container container grid">
                     <img src="assets/img/agnes.png" alt="Agnes Rachline une main tendue parental" class="project__img">
@@ -211,7 +219,8 @@
 
 
         <!--==================== TARIFS====================-->
-        <section class="tarifs section" id="tarifs">
+        <section data-aos="fade-up"
+        data-aos-duration="3000" class="tarifs section" id="tarifs">
             <h2 class="section__title">Tarifs & Prestations</h2>
             <span class="section__subtitle">Je propose des rencontres adaptées à chaque famille.<br>
                 Chaque prestation peut se faire à distance (au téléphone ou en visio) ou à domicile</span>
@@ -483,7 +492,7 @@
         </section>
 
         <!--==================== Blogs ====================-->
-        <section class="blogs section" id="blogs">
+        <section data-aos="fade-left" class="blogs section" id="blogs">
             <h2 class="section__title">Blog</h2>
             <span class="section__subtitle"></span>
 
@@ -529,7 +538,9 @@
         </section>
 
         <!--==================== TESTIMONIAL ====================-->
-        <section class="testimonial section" id="testimonial">
+        <section data-aos="fade-right"
+        data-aos-offset="300"
+        data-aos-easing="ease-in-sine" class="testimonial section" id="testimonial">
             <h2 class="section__title">Témoignages</h2>
             <span class="section__subtitle"></span>
 
@@ -739,7 +750,7 @@
         </section>
 
         <!--==================== CONTACT ME ====================-->
-        <section class="contact section" id="contact">
+        <section data-aos="zoom-out-down" class="contact section" id="contact">
             <h2 class="section__title">Contactez-moi</h2>
             <span class="section__subtitle"></span>
 
@@ -800,6 +811,9 @@
     <script src="assets/js/swiper-bundle.min.js"></script>
     <!-- AOS Animate onscroll -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+      </script>
 
     <!--==================== MAIN JS ====================-->
     <script src="assets/js/main.js"></script>
