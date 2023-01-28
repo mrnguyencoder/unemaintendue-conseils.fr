@@ -832,6 +832,7 @@ img {
 /*==================== FOOTER ====================*/
 .footer {
   padding-top: 0.5rem;
+  ;
 }
 
 .footer__container {
@@ -839,7 +840,7 @@ img {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  align-items: center;
+  align-items: center
 }
 
 .footer__bg {
@@ -868,10 +869,10 @@ img {
   color: var(--first-color-lighter);
 }
 
-.footer__copy {
+.footer__dev {
   font-size: var(--smaller-font-size);
   text-align: center;
-  color: var(--text-color-light);
+  color: #61DBFB;
 }
 
 .footer__subtitle, .footer__link, .footer__social {
